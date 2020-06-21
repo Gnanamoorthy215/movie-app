@@ -1,0 +1,31 @@
+.movie {
+    width: 95%;
+    color: black;
+    margin: auto;
+    background-color: #CCD6D5 ;
+ }
+  
+ .title-year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+ }
+  
+ .title, .year {
+    font-weight: 400;
+ }
+  
+ .poster {
+    border-radius: 5%;
+    margin-left: 60px;
+    margin-bottom: 5px;
+    height: 300px;
+ }
+
+ .poster img{
+     max-height: 280px !important;
+ }
+ .col-md-4{
+    border-right: 2px solid azure !important;
+ }
