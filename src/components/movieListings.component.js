@@ -11,7 +11,7 @@ class MovieListings extends Component{
 
     componentDidMount() {
         // a default movie is made to load 
-        fetch('http://www.omdbapi.com/?i=tt0071315&apikey=cc204475')
+        fetch('https://www.omdbapi.com/?i=tt0071315&apikey=cc204475')
         .then(res => res.json())
         .then((data) => {
           this.setState({ movies: data })

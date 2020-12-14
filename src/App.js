@@ -1,5 +1,7 @@
-import React ,{Component}from 'react';
+import React ,{Component} from 'react';
+import {useEffect} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import ReactGa from 'react-ga';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -9,6 +11,10 @@ import MovieCrud from "./components/movieCrud.component";
 import logo from "./assets/kill-bill.jpg";
 
 class App extends Component {
+  componentDidMount(){
+    ReactGa.initialize('G-QQ8B8EGC87');
+    ReactGa.pageview('/');
+  }
   render() {
     return (
       

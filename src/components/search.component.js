@@ -11,7 +11,7 @@ class Search extends React.Component {
 
    getMoviesByTitle(searchString){
        //searching the OMDB API for title and maintaining it in components state
-    fetch('http://www.omdbapi.com/?t='+ searchString +'&apikey=cc204475')
+    fetch('https://www.omdbapi.com/?t='+ searchString +'&apikey=cc204475')
     .then(res => res.json())
     .then((data) => {
       this.setState({ listOfMovies : data })
